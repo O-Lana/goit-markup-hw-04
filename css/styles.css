@@ -143,7 +143,13 @@ body {
 /* -------------------------------HERO---------------------------------- */
 .hero {
   padding: 200px 0;
-  background: #2f303a;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+  background-size: cover;
 }
 
 .hero-title {
@@ -424,14 +430,14 @@ body {
 
 .gallery {
   display: flex;
-  flex-basis: calc((100% - 30px)) / 3;
+  /* flex-basis: calc((100% - 30px)) / 3; */
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .gallery-item {
-  /* flex-basis: calc((100% - 90px) / 3); */
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
